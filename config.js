@@ -46,13 +46,13 @@ var config = {
 		        module: 'compliments',
 		        position: 'lower_third',
 		        config: {
-				remoteFile: "compliments.json",
 		                updateInterval: 120000,
 		                fadespeed: 5000,
 		                morningStartTime: 6,
 		                morningEndTime: 12,
 		                afternoonStartTime: 12,
 		                afternoonEndTime: 19
+				compliments: {remoteFile: "compliments.json"}
 		                }
         	},
 		{
