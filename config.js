@@ -51,8 +51,8 @@ var config = {
 		                morningStartTime: 6,
 		                morningEndTime: 12,
 		                afternoonStartTime: 12,
-		                afternoonEndTime: 19
-				compliments: {remoteFile: "compliments.json"}
+		                afternoonEndTime: 19,
+				remoteFile: "compliments.json"
 		                }
         	},
 		{
