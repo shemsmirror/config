@@ -1,5 +1,5 @@
 var config = {
-	address: "::", // Address to listen on, can be:
+	address: "::", // Address to listen on, can be: (needs to be :: for docker container)
 	                      // - "localhost", "127.0.0.1", "::1" to listen on loopback interface
 	                      // - another specific IPv4/6 to listen on a specific interface
 	                      // - "", "0.0.0.0", "::" to listen on any interface
