@@ -46,6 +46,7 @@ var config = {
 		        module: 'compliments',
 		        position: 'lower_third',
 		        config: {
+				remoteFile: "compliments.json",
 		                updateInterval: 120000,
 		                fadespeed: 5000,
 		                morningStartTime: 6,
