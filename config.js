@@ -39,8 +39,8 @@ var config = {
 						url: "webcal://www.calendarlabs.com/templates/ical/UK-Holidays.ics"
 					},
 					{
-						symbol: "home",
-						url: "webcal://p30-caldav.icloud.com/published/2/NDI5NDkyMjU3NDI5NDkyMpv8Ljhm-k9QKABNaNamVaCpCO83PTV9gcDys-uyJMfd"
+						symbol: "calendar-alt",
+						url: "https://calendar.google.com/calendar?cid=dC5zaGVtLmF3c0BnbWFpbC5jb20"
 					}
 				],
 
