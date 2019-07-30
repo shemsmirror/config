@@ -37,6 +37,10 @@ var config = {
 					{
 						symbol: "calendar-check-o",
 						url: "webcal://www.calendarlabs.com/templates/ical/UK-Holidays.ics"
+					},
+					{
+						symbol: "home",
+						url: "webcal://p30-caldav.icloud.com/published/2/NDI5NDkyMjU3NDI5NDkyMpv8Ljhm-k9QKABNaNamVaCpCO83PTV9gcDys-uyJMfd"
 					}
 				],
 
@@ -82,6 +86,10 @@ var config = {
 					{
 					title: "BBC",
 					url: "http://feeds.bbci.co.uk/news/rss.xml",
+					},
+					{
+					title: "Sky News",
+					url: "http://feeds.skynews.com/feeds/rss/uk.xml",
 					},
 				],
 				showSourceTitle: true,
