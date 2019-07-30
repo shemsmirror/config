@@ -16,9 +16,9 @@ var config = {
 	units: "metric",
 
 	modules: [
-///		{
-///			module: "alert",
-///		},
+		{
+			module: "alert",
+		},
 ///		{
 ///			module: "updatenotification",
 ///			position: "top_bar"
