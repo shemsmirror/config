@@ -58,7 +58,38 @@ if __name__ == '__main__':
         os.remove('modules/default/compliments/new_compliments.json')
         print('done!')
 
-    if upToDate is False or compUpToDate is False:
+
+
+
+    print('checking Github css file for an update...')
+    cssurl = 'https://raw.githubusercontent.com/shemsmirror/config/master/custom.css'
+    cssdir = 'css/new_custom.css'
+    cssfile = os.path.join(script_dir, cssdir)
+
+    newest = urllib.request.urlretrieve(cssurl, cssfile)
+    with open('css/custom.css') as currentCss:
+        with open('css/new_custom.css') as newCss:
+            csscurrent = currentCss.read()
+            cssnew = newCss.read()
+            if csscurrent == cssnew:
+                cssUpToDate = True
+                print('custom.css is already the newest version')
+            else:
+                cssUpToDate = False
+                print('newer version detected')
+
+    if cssUpToDate is False:
+        print('downloading update...')
+        os.remove('css/custom.css')
+        os.rename('css/new_custom.css', 'css/custom.css')
+        print('update successful')
+    else:
+        print('removing temporary config file...')
+        os.remove('css/new_custom.css')
+        print('done!')
+
+
+    if upToDate is False or compUpToDate is False or cssUpToDate is False:
         print('changes applied, please restart MagicMirror')
     else:
         print('all files were up to date, no restart required')
