@@ -23,7 +23,6 @@ var config = {
 ///			module: "updatenotification",
 ///			position: "top_bar"
 ///		},
-
 		{
 			module: "clock",
 			position: "top_left"
@@ -115,7 +114,7 @@ var config = {
 				height: 300,
 				width: 500,
 			}
-		}
+		},
 		{
 			module: "newsfeed",
 			position: "bottom_bar",
