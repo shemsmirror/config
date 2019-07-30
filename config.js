@@ -60,6 +60,18 @@ var config = {
 		                }
         	},
 		{
+		  module: "MMM-NowPlayingOnSpotify",
+		  position: "top_left",
+
+		  config: {
+		    showCoverArt: true,
+		    clientID: "c9ef778706f1411092dcbb6b87ede265",
+		    clientSecret: "7d364d4a91a045afa99dd6a3ce04a244",
+		    accessToken: "BQAnMtR7TjLJn0C53clDkMdiTfs6VhSpBAeD37mLX4K-kaFvVDollhlulgfwLSsxCKha30AVmjiiq-TvQJEwb1jAKKizCmRgD3R4i8wzG3MuSKcQ9D8nX7_6mws6v-YSQGY61OuKVWyWYoTeH0UbxqCt3g",
+		    refreshToken: "AQAy7NOzDvuXgMeHPZ26zsmRT8x7dXQOXrsB-MOpmLu0rmsi0ZKhzDwCmbxyQdmVwc4Tt9XtDcpF6naaaMMtLwyycImm_ZWOMmL0U0FDQY7nOW_L-YxX7sCa2T-GSZYjeD1fPg"
+		  }
+		},
+		{
 			module: "currentweather",
 			position: "top_right",
 			config: {
