@@ -40,6 +40,9 @@ letter-spacing: -3px;
 }
 
 /* SPOTIFY */
+.MMM-NowPlayingOnSpotify{
+ width:250px;
+}
 .NPOS_nothingIsPlayingImage{
 display: none;
 }
