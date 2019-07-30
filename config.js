@@ -91,6 +91,19 @@ var config = {
 			}
 		},
 		{
+		module: 'MMM-UKNationalRail',
+		position: 'top_right',
+		header:	'Trains to Colchester',		//Optional - delete this line to turn OFF the header completely
+		config: {
+			stationCode: 	'CHM', 		// CRS code for station
+			calling_at: 'COL',
+			app_id: 	'a500f5fc', 		// TransportAPI App ID
+			app_key: 	'4609b7523fb8aabc572c3cd3c5b88f85', 		// TransportAPI App Key
+			maxResults: 5,  		//Optional - Maximum results to display.
+			showOrigin: true   	//Optional - Show the origin of the train in the table
+		}
+	},
+		{
 			module: "newsfeed",
 			position: "bottom_bar",
 			config: {
