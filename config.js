@@ -95,7 +95,7 @@ var config = {
 			}
 		},
 		{
-		module: "weatherforecast",
+			module: "weatherforecast",
 			position: "top_right",
 			header: "Weather Forecast",
 			config: {
@@ -107,6 +107,15 @@ var config = {
 		{
 		    module: 'MMM-Remote-Control'
 		},
+		{
+			module: 'MMM-Screencast',
+			position: 'bottom_right', // This position is for a hidden <div /> and not the screencast window
+			config: {
+				position: 'center',
+				height: 300,
+				width: 500,
+			}
+		}
 		{
 			module: "newsfeed",
 			position: "bottom_bar",
