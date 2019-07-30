@@ -100,7 +100,7 @@ var config = {
 			app_id: 	'a500f5fc', 		// TransportAPI App ID
 			app_key: 	'4609b7523fb8aabc572c3cd3c5b88f85', 		// TransportAPI App Key
 			maxResults: 5,  		//Optional - Maximum results to display.
-			showOrigin: true   	//Optional - Show the origin of the train in the table
+			showOrigin: false   	//Optional - Show the origin of the train in the table
 			}
 		},
 		{
