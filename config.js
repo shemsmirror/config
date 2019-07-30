@@ -54,7 +54,7 @@ var config = {
 					},
 					{
 						symbol: "calendar-alt",
-						url: "https://calendar.google.com/calendar?cid=dC5zaGVtLmF3c0BnbWFpbC5jb20"
+						url: "https://calendar.google.com/calendar/ical/t.shem.aws%40gmail.com/private-4ccbc56bd3ac77e69d91100957310e1a/basic.ics"
 					}
 				],
 
