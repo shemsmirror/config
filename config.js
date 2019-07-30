@@ -29,6 +29,20 @@ var config = {
 			position: "top_left"
 		},
 		{
+		module: 'MMM-UKNationalRail',
+		position: 'top_left',
+		header:	'Trains to Colchester',		//Optional - delete this line to turn OFF the header completely
+		config: {
+			stationCode: 	'CHM', 		// CRS code for station
+			calling_at: 'COL',
+			destination: 'CLT',
+			app_id: 	'a500f5fc', 		// TransportAPI App ID
+			app_key: 	'4609b7523fb8aabc572c3cd3c5b88f85', 		// TransportAPI App Key
+			maxResults: 4,  		//Optional - Maximum results to display.
+			showOrigin: false   	//Optional - Show the origin of the train in the table
+			}
+		},
+		{
 			module: "calendar",
 			header: "Upcoming Events",
 			position: "top_left",
@@ -88,19 +102,6 @@ var config = {
 				location: "Chelmsford",
 				locationID: "2653266",  //ID from http://www.openweathermap.org/help/city_list.txt
 				appid: "1b1b44674ca860ddbed56f2ad2c91020"
-			}
-		},
-		{
-		module: 'MMM-UKNationalRail',
-		position: 'top_right',
-		header:	'Trains to Colchester',		//Optional - delete this line to turn OFF the header completely
-		config: {
-			stationCode: 	'CHM', 		// CRS code for station
-			calling_at: 'COL',
-			app_id: 	'a500f5fc', 		// TransportAPI App ID
-			app_key: 	'4609b7523fb8aabc572c3cd3c5b88f85', 		// TransportAPI App Key
-			maxResults: 5,  		//Optional - Maximum results to display.
-			showOrigin: false   	//Optional - Show the origin of the train in the table
 			}
 		},
 		{
