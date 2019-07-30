@@ -101,20 +101,11 @@ var config = {
 			app_key: 	'4609b7523fb8aabc572c3cd3c5b88f85', 		// TransportAPI App Key
 			maxResults: 5,  		//Optional - Maximum results to display.
 			showOrigin: true   	//Optional - Show the origin of the train in the table
-		}
-	},
-	{
-	    module: 'MMM-Remote-Control'
-	    // uncomment the following line to show the URL of the remote control on the mirror
-	    // , position: 'bottom_left'
-	    // you can hide this module afterwards from the remote control itself
-	    config: {
-		customCommand: {},  // Optional, See "Using Custom Commands" below
-		customMenu: "custom_menu.json", // Optional, See "Custom Menu Items" below
-		showModuleApiMenu: true, // Optional, Enable the Module Controls menu
-		apiKey: "",         // Optional, See API/README.md for details
-	    }
-	},
+			}
+		},
+		{
+		    module: 'MMM-Remote-Control'
+		},
 		{
 			module: "newsfeed",
 			position: "bottom_bar",
