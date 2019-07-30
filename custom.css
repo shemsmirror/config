@@ -39,6 +39,10 @@ line-height: 65px;
 letter-spacing: -3px;
 }
 
+.MMM-UKNationalRail {
+    width: 100px;
+}
+
 /* SPOTIFY */
 .MMM-NowPlayingOnSpotify{
  width:250px;
