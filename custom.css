@@ -14,17 +14,17 @@
 }
 
 .xsmall {
-font-size: 5px;
+font-size: 8px;
 line-height: 10px;
   }
   
 .small {
-font-size: 10px;
+font-size: 15px;
 line-height: 15px;
 }
 
 .medium {
-font-size: 20px;
+font-size: 22px;
 line-height: 25px;
 }
 
@@ -40,7 +40,7 @@ letter-spacing: -3px;
 }
 /* National Rail*/
 .trains {
-  font-size: 20%;
+  font-size: 30%;
   display: inline-block;
   -o-transform: translate(0, -3px);
   -moz-transform: translate(0, -3px);
