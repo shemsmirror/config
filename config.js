@@ -32,24 +32,24 @@ var config = {
 		  position: "top_center",
 		  config: {
 		    locale: "", //default is system locale, or use like this. "de-DE"
-		    canvasWidth:100,
-		    canvasHeight:100,
+		    canvasWidth:120,
+		    canvasHeight:120,
 		    centerColor: "#FFFFFF",
-		    centerR: 30,
+		    centerR: 10,
 		    centerTextFormat: "YYYY",
-		    centerFont: "bold 10px Roboto",
+		    centerFont: "bold 8px Roboto",
 		    centerTextColor:"#000000",
 		    hands: ["month", "date", "day", "hour", "minute", "second"],
 		    //available values; "year", "month", "date", "week", "day", "hour", "minute", "second"
 		    handType: "round", //"default", "round"
-		    handWidth: [40, 40, 40, 40, 40, 40],
+		    handWidth: [10, 10, 10, 10, 10, 10],
 		    handTextFormat: ["MMM", "Do", "ddd", "h", "m", "s"],
-		    handFont: "bold 16px Roboto",
+		    handFont: "bold 10px Roboto",
 		    useNail: true,
-		    nailSize: 40,
+		    nailSize: 20,
 		    nailBgColor: "#000000",
 		    nailTextColor: "#FFFFFF", //CSS color or "inherit"
-		    space: 3,
+		    space: 2,
 		    colorType: "hsv", //availables: "static", "radiation", "transform", "hsv"
 		    colorTypeStatic: ["red", "orange", "yellow", "green", "blue", "purple"],
 		    colorTypeRadiation: ["#333333", "red"],
