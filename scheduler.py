@@ -3,18 +3,29 @@ import time
 import requests
 
 def showModule(moduleName,time):
-    print("Showing "+ moduleName + " ("+time+")")
-    url = "http://192.168.1.228:9090/remote?action=SHOW&module="+moduleName
+    print("showing "+ moduleName + " ("+time+")")
+    url = "http://127.0.0.1:9090/remote?action=SHOW&module="+moduleName
     resp = requests.get(url)
     print(resp.json())
+
+    schedule.every().hour.do(refreshBrowser).tag("hourly-refresh")
+    print("hourly browser refresh enabled")
     return
 
 def hideModule(moduleName,time):
-    print("Hiding "+ moduleName + " ("+time+")")
-    url = "http://192.168.1.228:9090/remote?action=HIDE&module="+moduleName
+    print("hiding "+ moduleName + " ("+time+")")
+    url = "http://127.0.0.1:9090/remote?action=HIDE&module="+moduleName
     resp = requests.get(url)
     print(resp.json())
+    schedule.clear("hourly-refresh")
+    print("hourly browser refresh disabled")
     return
+
+def refreshBrowser():
+    print("hourly browser refresh")
+    url = "http://127.0.0.1:9090/remote?action=REFRESH"
+    resp = requests.get(url)
+    print(resp.json())
 
 train_times = ["05:00","15:00"]
 schedule.every().day.at(train_times[0]).do(showModule,'MMM-UKNationalRail',train_times[0])
