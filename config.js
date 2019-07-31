@@ -41,15 +41,15 @@ var config = {
 		    centerTextColor:"#000000",
 		    hands: ["month", "date", "day", "hour","minute"],
 		    //available values; "year", "month", "date", "week", "day", "hour", "minute", "second"
-		    handType: "round", //"default", "round"
+		    handType: "default", //"default", "round"
 		    handWidth: [11, 11, 11, 11, 11, 11],
 		    handTextFormat: ["MMM", "Do", "ddd", "h", "m", "s"],
 		    handFont: "bold 10px Roboto",
 		    useNail: true,
-		    nailSize: 20,
+		    nailSize: 15,
 		    nailBgColor: "#000000",
 		    nailTextColor: "#FFFFFF", //CSS color or "inherit"
-		    space: 1,
+		    space: 2,
 		    colorType: "radiation", //availables: "static", "radiation", "transform", "hsv"
 		    colorTypeStatic: ["red", "orange", "yellow", "green", "blue", "purple"],
 		    colorTypeRadiation: ["#333333", "red"],
