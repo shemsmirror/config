@@ -15,13 +15,13 @@ if __name__ == '__main__':
             current = currentConfig.read()
             new = newConfig.read()
             if current == new:
-                upToDate = True
+                confUpToDate = True
                 print('config.js is already the newest version')
             else:
-                upToDate = False
+                confUpToDate = False
                 print('newer version detected')
 
-    if upToDate is False:
+    if confUpToDate is False:
         print('downloading update...')
         os.remove('config/config.js')
         os.rename('config/new_config.js', 'config/config.js')
@@ -88,8 +88,35 @@ if __name__ == '__main__':
         os.remove('css/new_custom.css')
         print('done!')
 
+    print('checking Github scheduler file for an update...')
+    schurl = 'https://raw.githubusercontent.com/shemsmirror/config/master/scheduler.py'
+    schdir = 'new_scheduler.py'
+    schfile = os.path.join(script_dir, schdir)
 
-    if upToDate is False or compUpToDate is False or cssUpToDate is False:
+    newest = urllib.request.urlretrieve(schurl, schfile)
+    with open('scheduler.py') as currentsch:
+        with open('new_scheduler.py') as newsch:
+            schcurrent = currentsch.read()
+            schnew = newsch.read()
+            if schcurrent == schnew:
+                schUpToDate = True
+                print('scheduler.py is already the newest version')
+            else:
+                schUpToDate = False
+                print('newer version detected')
+
+    if schUpToDate is False:
+        print('downloading update...')
+        os.remove('scheduler.py')
+        os.rename('new_scheduler.py', 'scheduler.py')
+        print('update successful')
+    else:
+        print('removing temporary config file...')
+        os.remove('new_scheduler.py')
+        print('done!')
+
+
+    if confUpToDate is False or compUpToDate is False or cssUpToDate is False or schUpToDate is False:
         print('changes applied, please restart MagicMirror')
     else:
         print('all files were up to date, no restart required')
