@@ -39,22 +39,32 @@ var config = {
 		    centerTextFormat: "YYYY",
 		    centerFont: "bold 8px Roboto",
 		    centerTextColor:"#000000",
-		    hands: ["month", "date", "day", "hour", "minute", "second"],
+		    hands: ["month", "date", "day", "hour"],
 		    //available values; "year", "month", "date", "week", "day", "hour", "minute", "second"
 		    handType: "round", //"default", "round"
 		    handWidth: [10, 10, 10, 10, 10, 10],
 		    handTextFormat: ["MMM", "Do", "ddd", "h", "m", "s"],
 		    handFont: "bold 10px Roboto",
 		    useNail: true,
-		    nailSize: 20,
+		    nailSize: 8,
 		    nailBgColor: "#000000",
 		    nailTextColor: "#FFFFFF", //CSS color or "inherit"
 		    space: 2,
-		    colorType: "hsv", //availables: "static", "radiation", "transform", "hsv"
+		    colorType: "radiation", //availables: "static", "radiation", "transform", "hsv"
 		    colorTypeStatic: ["red", "orange", "yellow", "green", "blue", "purple"],
 		    colorTypeRadiation: ["#333333", "red"],
 		    colorTypeTransform: ["blue", "red"],
-		    colorTypeHSV: 0.25, //hsv circle start color : 0~1		   
+		    colorTypeHSV: 0.25, //hsv circle start color : 0~1
+	            handConversionMap: { // I think you don't need to modify this.
+		      "year": "YYYY",
+		      "month": "M",
+		      "date": "D",
+		      "week": "w", // Local week of year. If you want to use ISO week of year, use "W" instead "w"
+		      "day": "e", // Local day of week. If you want to use ISO day of week, use "E" instead "e"
+		      "hour": "H", // 12H system. If you want to 24H system, use "H" instead "h"
+		      "minute": "m",
+		      "second": "s"
+		    }
 		  }
 		},
 		{
