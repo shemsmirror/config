@@ -27,7 +27,7 @@ def refreshBrowser():
     resp = requests.get(url)
     print(resp.json())
 
-train_times = ["05:00","17:00"]
+train_times = ["15:00","17:00"]
 schedule.every().day.at(train_times[0]).do(showModule,'MMM-UKNationalRail',train_times[0])
 schedule.every().day.at(train_times[1]).do(hideModule,'MMM-UKNationalRail',train_times[0])
 
