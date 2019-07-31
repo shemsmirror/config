@@ -28,6 +28,11 @@ var config = {
 			position: "top_left"
 		},
 		{
+		  module: "MMM-OClock",
+		  position: "top_center",
+		  config: {}
+		},
+		{
 		module: 'MMM-UKNationalRail',
 		position: 'top_left',
 		header:	'Trains to Colchester',		//Optional - delete this line to turn OFF the header completely
