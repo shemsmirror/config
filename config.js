@@ -29,7 +29,7 @@ var config = {
 		},
 		{
 		  module: "MMM-OClock",
-		  position: "center",
+		  position: "upper_third",
 		  config: {
 		    locale: "", //default is system locale, or use like this. "de-DE"
 		    canvasWidth:200,
@@ -91,7 +91,7 @@ var config = {
 		},
 		{
 		        module: 'compliments',
-		        position: 'bottom_bar',
+		        position: 'lower_third',
 		        config: {
 		                updateInterval: 120000,
 		                fadespeed: 5000,
@@ -138,7 +138,7 @@ var config = {
 		},
 		{
 			module: "newsfeed",
-			position: "lower_third",
+			position: "bottom_bar",
 			config: {
 				feeds: [
 					{
