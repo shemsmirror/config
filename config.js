@@ -29,11 +29,11 @@ var config = {
 		},
 		{
 		  module: "MMM-OClock",
-		  position: "top_center",
+		  position: "center",
 		  config: {
 		    locale: "", //default is system locale, or use like this. "de-DE"
-		    canvasWidth:120,
-		    canvasHeight:120,
+		    canvasWidth:200,
+		    canvasHeight:200,
 		    centerColor: "#FFFFFF",
 		    centerR: 10,
 		    centerTextFormat: "YYYY",
