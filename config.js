@@ -29,7 +29,7 @@ var config = {
 		},
 		{
 		  module: "MMM-OClock",
-		  position: "upper_third",
+		  position: "lower_third",
 		  config: {
 		    locale: "", //default is system locale, or use like this. "de-DE"
 		    canvasWidth:200,
