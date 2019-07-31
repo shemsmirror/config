@@ -37,16 +37,16 @@ var config = {
 		    centerColor: "#FFFFFF",
 		    centerR: 12,
 		    centerTextFormat: "YYYY",
-		    centerFont: "bold 6px Roboto",
+		    centerFont: "bold 8px Roboto",
 		    centerTextColor:"#000000",
 		    hands: ["month", "date", "day", "hour","minute"],
 		    //available values; "year", "month", "date", "week", "day", "hour", "minute", "second"
 		    handType: "round", //"default", "round"
-		    handWidth: [8, 8, 8, 10, 10, 10],
+		    handWidth: [10, 11, 12, 13, 14, 15],
 		    handTextFormat: ["MMM", "Do", "ddd", "h", "m", "s"],
-		    handFont: "bold 7px Roboto",
+		    handFont: "bold 8px Roboto",
 		    useNail: true,
-		    nailSize: 14,
+		    nailSize: 15,
 		    nailBgColor: "#000000",
 		    nailTextColor: "#FFFFFF", //CSS color or "inherit"
 		    space: 2,
