@@ -35,18 +35,18 @@ var config = {
 		    canvasWidth:200,
 		    canvasHeight:200,
 		    centerColor: "#FFFFFF",
-		    centerR: 10,
+		    centerR: 12,
 		    centerTextFormat: "YYYY",
-		    centerFont: "bold 8px Roboto",
+		    centerFont: "bold 10px Roboto",
 		    centerTextColor:"#000000",
 		    hands: ["month", "date", "day", "hour"],
 		    //available values; "year", "month", "date", "week", "day", "hour", "minute", "second"
 		    handType: "round", //"default", "round"
 		    handWidth: [10, 10, 10, 10, 10, 10],
 		    handTextFormat: ["MMM", "Do", "ddd", "h", "m", "s"],
-		    handFont: "bold 10px Roboto",
+		    handFont: "bold 12px Roboto",
 		    useNail: true,
-		    nailSize: 8,
+		    nailSize: 14,
 		    nailBgColor: "#000000",
 		    nailTextColor: "#FFFFFF", //CSS color or "inherit"
 		    space: 2,
