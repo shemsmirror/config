@@ -41,7 +41,7 @@ var config = {
 		    centerTextColor:"#000000",
 		    hands: ["month", "date", "day", "hour","minute"],
 		    //available values; "year", "month", "date", "week", "day", "hour", "minute", "second"
-		    handType: "default", //"default", "round"
+		    handType: "round", //"default", "round"
 		    handWidth: [11, 11, 11, 11, 11, 11],
 		    handTextFormat: ["MMM", "Do", "ddd", "h", "m", "s"],
 		    handFont: "bold 10px Roboto",
@@ -52,7 +52,7 @@ var config = {
 		    space: 2,
 		    colorType: "radiation", //availables: "static", "radiation", "transform", "hsv"
 		    colorTypeStatic: ["red", "orange", "yellow", "green", "blue", "purple"],
-		    colorTypeRadiation: ["#333333", "red"],
+		    colorTypeRadiation: ["#502075", "red"],
 		    colorTypeTransform: ["blue", "red"],
 		    colorTypeHSV: 0.25, //hsv circle start color : 0~1
 	            handConversionMap: { // I think you don't need to modify this.
