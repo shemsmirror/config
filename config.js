@@ -91,7 +91,7 @@ var config = {
 		},
 		{
 		        module: 'compliments',
-		        position: 'lower_third',
+		        position: 'bottom_bar',
 		        config: {
 		                updateInterval: 120000,
 		                fadespeed: 5000,
@@ -138,7 +138,7 @@ var config = {
 		},
 		{
 			module: "newsfeed",
-			position: "bottom_bar",
+			position: "lower_third",
 			config: {
 				feeds: [
 					{
