@@ -30,7 +30,32 @@ var config = {
 		{
 		  module: "MMM-OClock",
 		  position: "top_center",
-		  config: {}
+		  config: {
+		    locale: "", //default is system locale, or use like this. "de-DE"
+		    canvasWidth:100,
+		    canvasHeight:100,
+		    centerColor: "#FFFFFF",
+		    centerR: 30,
+		    centerTextFormat: "YYYY",
+		    centerFont: "bold 10px Roboto",
+		    centerTextColor:"#000000",
+		    hands: ["month", "date", "day", "hour", "minute", "second"],
+		    //available values; "year", "month", "date", "week", "day", "hour", "minute", "second"
+		    handType: "round", //"default", "round"
+		    handWidth: [40, 40, 40, 40, 40, 40],
+		    handTextFormat: ["MMM", "Do", "ddd", "h", "m", "s"],
+		    handFont: "bold 16px Roboto",
+		    useNail: true,
+		    nailSize: 40,
+		    nailBgColor: "#000000",
+		    nailTextColor: "#FFFFFF", //CSS color or "inherit"
+		    space: 3,
+		    colorType: "hsv", //availables: "static", "radiation", "transform", "hsv"
+		    colorTypeStatic: ["red", "orange", "yellow", "green", "blue", "purple"],
+		    colorTypeRadiation: ["#333333", "red"],
+		    colorTypeTransform: ["blue", "red"],
+		    colorTypeHSV: 0.25, //hsv circle start color : 0~1		   
+		  }
 		},
 		{
 		module: 'MMM-UKNationalRail',
