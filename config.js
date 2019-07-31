@@ -53,7 +53,7 @@ var config = {
 		    colorType: "radiation", //availables: "static", "radiation", "transform", "hsv"
 		    colorTypeStatic: ["red", "orange", "yellow", "green", "blue", "purple"],
 		    colorTypeRadiation: ["#502075", "#333333"],
-		    colorTypeTransform: ["blue", "red"],
+		    colorTypeTransform: ["blue", "purple"],
 		    colorTypeHSV: 0.25, //hsv circle start color : 0~1
 	            handConversionMap: { // I think you don't need to modify this.
 		      "year": "YYYY",
