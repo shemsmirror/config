@@ -42,14 +42,14 @@ var config = {
 		    hands: ["month", "date", "day", "hour","minute"],
 		    //available values; "year", "month", "date", "week", "day", "hour", "minute", "second"
 		    handType: "round", //"default", "round"
-		    handWidth: [10, 11, 12, 13, 14, 15],
+		    handWidth: [11, 11, 11, 11, 11, 11],
 		    handTextFormat: ["MMM", "Do", "ddd", "h", "m", "s"],
-		    handFont: "bold 8px Roboto",
+		    handFont: "bold 10px Roboto",
 		    useNail: true,
-		    nailSize: 15,
+		    nailSize: 20,
 		    nailBgColor: "#000000",
 		    nailTextColor: "#FFFFFF", //CSS color or "inherit"
-		    space: 2,
+		    space: 1,
 		    colorType: "radiation", //availables: "static", "radiation", "transform", "hsv"
 		    colorTypeStatic: ["red", "orange", "yellow", "green", "blue", "purple"],
 		    colorTypeRadiation: ["#333333", "red"],
